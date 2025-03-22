@@ -41,6 +41,21 @@ export default function AR(){
           scene.add(controller);
       
           const loader = new GLTFLoader();
+
+        // Function to load and place the model
+        const loadModel = (position) => {
+            loader.load(
+            "./models/storage_bench.glb", // Update with the correct model path
+            (gltf) => {
+                const model = gltf.scene;
+                model.position.copy(position);
+                model.scale.set(0.08, 0.08, 0.08); // Adjust scale as needed
+                scene.add(model);
+            },
+            undefined,
+            (error) => console.error("Error loading model:", error)
+            );
+        };
         
 
     })
