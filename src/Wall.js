@@ -34,53 +34,53 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load textures
     const textureLoader = new THREE.TextureLoader();
     const textureSets = {
-      brick: {
+      plaster: {
         map: textureLoader.load(
-          "./textures/wood_floor_1k/textures/wood_floor_diff_1k.jpg"
+          "./textures/painted_plaster_wall_1k/textures/painted_plaster_wall_diff_1k.jpg"
         ),
         normalMap: textureLoader.load(
-          "./textures/wood_floor_1k/textures/wood_floor_nor_gl_1k.jpg"
+          "./textures/painted_plaster_wall_1k/textures/painted_plaster_wall_nor_gl_1k.jpg"
         ),
         displacementMap: textureLoader.load(
-          "./textures/wood_floor_1k/textures/wood_floor_disp_1k.jpg"
+          "./textures/painted_plaster_wall_1k/textures/painted_plaster_wall_disp_1k.jpg"
         ),
         aoMap: textureLoader.load(
-          "./textures/wood_floor_1k/textures/wood_floor_arm_1k.jpg"
+          "./textures/painted_plaster_wall_1k/textures/painted_plaster_wall_arm_1k.jpg"
         ),
       },
       concrete: {
         map: textureLoader.load(
-          "./textures/stone_embedded_tiles_1k/textures/stone_embedded_tiles_diff_1k.jpg"
+          "./textures/painted_concrete_wall_1k/textures/painted_concrete_wall_diff_1k.jpg"
         ),
         normalMap: textureLoader.load(
-          "./textures/stone_embedded_tiles_1k/textures/stone_embedded_tiles_nor_gl_1k.jpg"
+          "./textures/painted_concrete_wall_1k/textures/painted_concrete_wall_nor_gl_1k.jpg"
         ),
         displacementMap: textureLoader.load(
-          "./textures/stone_embedded_tiles_1k/textures/stone_embedded_tiles_disp_1k.jpg"
+          "./textures/painted_concrete_wall_1k/textures/painted_concrete_wall_disp_1k.jpg"
         ),
         aoMap: textureLoader.load(
-          "./textures/stone_embedded_tiles_1k/textures/stone_embedded_tiles_arm_1k.jpg"
+          "./textures/painted_concrete_wall_1k/textures/painted_concrete_wall_arm_1k.jpg"
         ),
       },
-      wallpaper: {
+      Wooden: {
         map: textureLoader.load(
-          "./textures/grey_cartago/grey_cartago_01_diff_1k.jpg"
+          "./textures/wood_planks_1k/textures/wood_planks_diff_1k.jpg"
         ),
         normalMap: textureLoader.load(
-          "./textures/grey_cartago/grey_cartago_01_nor_gl_1k.jpg"
+          "./textures/wood_planks_1k/textures/wood_planks_nor_gl_1k.jpg"
         ),
         displacementMap: textureLoader.load(
-          "./textures/grey_cartago/grey_cartago_01_disp_1k.jpg"
+          "./textures/wood_planks_1k/textures/wood_planks_disp_1k.jpg"
         ),
         aoMap: textureLoader.load(
-          "./textures/grey_cartago/grey_cartago_01_arm_1k.jpg"
+          "./textures/wood_planks_1k/textures/wood_planks_arm_1k.jpg"
         ),
       },
     };
 
     // Wall material with transparency
     const wallMaterial = new THREE.MeshStandardMaterial({
-      map: textureSets.brick.map,
+      map: textureSets.plaster.map,
       transparent: true,
       opacity: 0.6, // Semi-transparent wall
       side: THREE.DoubleSide,
