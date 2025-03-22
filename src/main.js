@@ -27,6 +27,21 @@ export default function AR(){
         renderer.setPixelRatio(window.devicePixelRatio)
         renderer.setSize(window.innerWidth,window.innerHeight)
         renderer.xr.enabled = true
+
+        //AR Button
+        const arButton = ARButton.createButton(renderer, {
+            requiredFeatures: ["hit-test"],
+            optionalFeatures: ["dom-overlay"],
+            domOverlay: { root: document.body },
+          });
+          document.body.appendChild(renderer.domElement);
+          document.body.appendChild(arButton);
+
+          const controller = renderer.xr.getController(0);
+          scene.add(controller);
+      
+          const loader = new GLTFLoader();
         
+
     })
 }
