@@ -19,6 +19,14 @@ export default function AR(){
         scene.add(ringMesh)
         camera.position.z = 5
 
-       
+        //Renderer
+        const renderer = new THREE.WebGLRenderer({
+            antialias: true,
+            alpha: true,
+        })
+        renderer.setPixelRatio(window.devicePixelRatio)
+        renderer.setSize(window.innerWidth,window.innerHeight)
+        renderer.xr.enabled = true
+        
     })
 }
