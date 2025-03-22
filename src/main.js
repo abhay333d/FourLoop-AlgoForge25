@@ -2,7 +2,7 @@ import * as THREE from "three"
 import { ARButton } from "three/examples/jsm/Addons.js"
 import { GLTFLoader } from "three/examples/jsm/Addons.js"
 
-export default function AR(){
+
     document.addEventListener("DOMContentLoaded", () => {
         const initialize = async () => {
           const scene = new THREE.Scene();
@@ -97,4 +97,4 @@ export default function AR(){
       
         initialize();
       });  
-}
+
