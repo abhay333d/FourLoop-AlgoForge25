@@ -50,16 +50,16 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       marble: {
         map: textureLoader.load(
-          "./textures/stone_embedded-tiles_1k/textures/stone_embedded_tiles_diff_1k.jpg"
+          "./textures/stone_embedded_tiles_1k/textures/stone_embedded_tiles_diff_1k.jpg"
         ),
         normalMap: textureLoader.load(
-          "./textures/stone_embedded-tiles_1k/textures/stone_embedded_tiles_nor_gl_1k.jpg"
+          "./textures/stone_embedded_tiles_1k/textures/stone_embedded_tiles_nor_gl_1k.jpg"
         ),
         displacementMap: textureLoader.load(
-          "./textures/stone_embedded-tiles_1k/textures/stone_embedded_tiles_disp_1k.jpg"
+          "./textures/stone_embedded_tiles_1k/textures/stone_embedded_tiles_disp_1k.jpg"
         ),
         aoMap: textureLoader.load(
-          "./textures/stone_embedded-tiles_1k/textures/stone_embedded_tiles_arm_1k.jpg"
+          "./textures/stone_embedded_tiles_1k/textures/stone_embedded_tiles_arm_1k.jpg"
         ),
       },
       tiles: {
