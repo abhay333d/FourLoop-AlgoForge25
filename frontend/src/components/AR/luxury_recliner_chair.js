@@ -104,7 +104,7 @@ const initialize = async () => {
 };
 
 // Load HTML content
-fetch('../../HTMLs/luxury_recliner_chair.html')
+fetch('../../allHTMLs/luxury_recliner_chair.html')
   .then((response) => response.text())
   .then((html) => {
     overlayContainer.innerHTML = html;
